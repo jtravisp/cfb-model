@@ -1,0 +1,15 @@
+# Python / Environments
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+
+# Research data directories (large raw syncs, intermediate derived datasets, generated reports)
+research/raw/
+research/derived/
+research/reports/
+
+# Keep experiments tracked
+!research/experiments/
