@@ -1,0 +1,43 @@
+[project]
+name = "cfb-model"
+version = "0.0.0"
+description = "College football prediction research, feature fitting, and bake-off modeling."
+requires-python = ">=3.12, <3.13"
+dependencies = [
+    "cfb",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+]
+
+[project.optional-dependencies]
+s3 = ["boto3>=1.35"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.2",
+    "ruff>=0.5",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+cfb = { path = "../travispollard.com/cfb", editable = false }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["cfb"]
