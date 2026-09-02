@@ -1,9 +1,10 @@
 """Smoke tests for cfb-model environment and dependencies."""
 
-import cfb
 import numpy as np
 import pandas as pd
 import sklearn
+
+import cfb
 
 
 def test_dependencies_importable() -> None:

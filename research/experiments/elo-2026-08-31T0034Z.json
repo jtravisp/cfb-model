@@ -1,0 +1,61 @@
+{
+  "optimizer": "grid_search",
+  "generated_at": "2026-08-31T00:34:47.598553+00:00",
+  "fit_window": {
+    "seasons": [
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023
+    ],
+    "burn_in_seasons": [
+      2015,
+      2016
+    ]
+  },
+  "regression_mode": "pinned",
+  "optimal_params": {
+    "elo_per_point": 16.0,
+    "k": 30.0,
+    "mov_damping": 2.2,
+    "mov_denominator_floor": 0.05,
+    "regression_to_mean": 0.3333333333333333,
+    "hfa": 3.0
+  },
+  "training_metrics": {
+    "mae": 13.538897811221593,
+    "brier": 0.19204955759811831,
+    "total_games": 4901,
+    "seven_point_win_rate": 0.6584507042253521,
+    "seven_point_count": 284
+  },
+  "sensitivity_fit": {
+    "optimal_params": {
+      "elo_per_point": 16.0,
+      "k": 30.0,
+      "mov_damping": 2.2,
+      "mov_denominator_floor": 0.05,
+      "regression_to_mean": 0.3333333333333333,
+      "hfa": 3.0
+    },
+    "metrics": {
+      "mae": 13.078172021808697,
+      "brier": 0.18990196155730837,
+      "total_games": 3787,
+      "seven_point_win_rate": 0.6575342465753424,
+      "seven_point_count": 219
+    }
+  },
+  "held_out_metrics": {
+    "seasons": [
+      2024,
+      2025
+    ],
+    "mae": 13.198755511975955,
+    "brier": 0.19390461935428757,
+    "seven_point_win_rate": 0.7128712871287128,
+    "seven_point_count": 101
+  }
+}

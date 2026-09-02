@@ -1,0 +1,403 @@
+season: 2023
+sources:
+- cfbd
+teams:
+  air-force:
+    cfbd: Air Force
+    division: FBS
+  akron:
+    cfbd: Akron
+    division: FBS
+  alabama:
+    cfbd: Alabama
+    division: FBS
+  app-state:
+    cfbd: App State
+    division: FBS
+  arizona:
+    cfbd: Arizona
+    division: FBS
+  arizona-state:
+    cfbd: Arizona State
+    division: FBS
+  arkansas:
+    cfbd: Arkansas
+    division: FBS
+  arkansas-state:
+    cfbd: Arkansas State
+    division: FBS
+  army:
+    cfbd: Army
+    division: FBS
+  auburn:
+    cfbd: Auburn
+    division: FBS
+  ball-state:
+    cfbd: Ball State
+    division: FBS
+  baylor:
+    cfbd: Baylor
+    division: FBS
+  boise-state:
+    cfbd: Boise State
+    division: FBS
+  boston-college:
+    cfbd: Boston College
+    division: FBS
+  bowling-green:
+    cfbd: Bowling Green
+    division: FBS
+  buffalo:
+    cfbd: Buffalo
+    division: FBS
+  byu:
+    cfbd: BYU
+    division: FBS
+  california:
+    cfbd: California
+    division: FBS
+  central-michigan:
+    cfbd: Central Michigan
+    division: FBS
+  charlotte:
+    cfbd: Charlotte
+    division: FBS
+  cincinnati:
+    cfbd: Cincinnati
+    division: FBS
+  clemson:
+    cfbd: Clemson
+    division: FBS
+  coastal-carolina:
+    cfbd: Coastal Carolina
+    division: FBS
+  colorado:
+    cfbd: Colorado
+    division: FBS
+  colorado-state:
+    cfbd: Colorado State
+    division: FBS
+  duke:
+    cfbd: Duke
+    division: FBS
+  east-carolina:
+    cfbd: East Carolina
+    division: FBS
+  eastern-michigan:
+    cfbd: Eastern Michigan
+    division: FBS
+  florida:
+    cfbd: Florida
+    division: FBS
+  florida-atlantic:
+    cfbd: Florida Atlantic
+    division: FBS
+  florida-international:
+    cfbd: Florida International
+    division: FBS
+  florida-state:
+    cfbd: Florida State
+    division: FBS
+  fresno-state:
+    cfbd: Fresno State
+    division: FBS
+  georgia:
+    cfbd: Georgia
+    division: FBS
+  georgia-southern:
+    cfbd: Georgia Southern
+    division: FBS
+  georgia-state:
+    cfbd: Georgia State
+    division: FBS
+  georgia-tech:
+    cfbd: Georgia Tech
+    division: FBS
+  hawaii:
+    cfbd: Hawai'i
+    division: FBS
+  houston:
+    cfbd: Houston
+    division: FBS
+  illinois:
+    cfbd: Illinois
+    division: FBS
+  indiana:
+    cfbd: Indiana
+    division: FBS
+  iowa:
+    cfbd: Iowa
+    division: FBS
+  iowa-state:
+    cfbd: Iowa State
+    division: FBS
+  jacksonville-state:
+    cfbd: Jacksonville State
+    division: FBS
+  james-madison:
+    cfbd: James Madison
+    division: FBS
+  kansas:
+    cfbd: Kansas
+    division: FBS
+  kansas-state:
+    cfbd: Kansas State
+    division: FBS
+  kent-state:
+    cfbd: Kent State
+    division: FBS
+  kentucky:
+    cfbd: Kentucky
+    division: FBS
+  liberty:
+    cfbd: Liberty
+    division: FBS
+  louisiana:
+    cfbd: Louisiana
+    division: FBS
+  louisiana-tech:
+    cfbd: Louisiana Tech
+    division: FBS
+  louisville:
+    cfbd: Louisville
+    division: FBS
+  lsu:
+    cfbd: LSU
+    division: FBS
+  marshall:
+    cfbd: Marshall
+    division: FBS
+  maryland:
+    cfbd: Maryland
+    division: FBS
+  massachusetts:
+    cfbd: Massachusetts
+    division: FBS
+  memphis:
+    cfbd: Memphis
+    division: FBS
+  miami:
+    cfbd: Miami
+    division: FBS
+  miami-oh:
+    cfbd: Miami (OH)
+    division: FBS
+  michigan:
+    cfbd: Michigan
+    division: FBS
+  michigan-state:
+    cfbd: Michigan State
+    division: FBS
+  middle-tennessee:
+    cfbd: Middle Tennessee
+    division: FBS
+  minnesota:
+    cfbd: Minnesota
+    division: FBS
+  mississippi-state:
+    cfbd: Mississippi State
+    division: FBS
+  missouri:
+    cfbd: Missouri
+    division: FBS
+  navy:
+    cfbd: Navy
+    division: FBS
+  nc-state:
+    cfbd: NC State
+    division: FBS
+  nebraska:
+    cfbd: Nebraska
+    division: FBS
+  nevada:
+    cfbd: Nevada
+    division: FBS
+  new-mexico:
+    cfbd: New Mexico
+    division: FBS
+  new-mexico-state:
+    cfbd: New Mexico State
+    division: FBS
+  north-carolina:
+    cfbd: North Carolina
+    division: FBS
+  north-texas:
+    cfbd: North Texas
+    division: FBS
+  northern-illinois:
+    cfbd: Northern Illinois
+    division: FBS
+  northwestern:
+    cfbd: Northwestern
+    division: FBS
+  notre-dame:
+    cfbd: Notre Dame
+    division: FBS
+  ohio:
+    cfbd: Ohio
+    division: FBS
+  ohio-state:
+    cfbd: Ohio State
+    division: FBS
+  oklahoma:
+    cfbd: Oklahoma
+    division: FBS
+  oklahoma-state:
+    cfbd: Oklahoma State
+    division: FBS
+  old-dominion:
+    cfbd: Old Dominion
+    division: FBS
+  ole-miss:
+    cfbd: Ole Miss
+    division: FBS
+  oregon:
+    cfbd: Oregon
+    division: FBS
+  oregon-state:
+    cfbd: Oregon State
+    division: FBS
+  penn-state:
+    cfbd: Penn State
+    division: FBS
+  pittsburgh:
+    cfbd: Pittsburgh
+    division: FBS
+  purdue:
+    cfbd: Purdue
+    division: FBS
+  rice:
+    cfbd: Rice
+    division: FBS
+  rutgers:
+    cfbd: Rutgers
+    division: FBS
+  sam-houston:
+    cfbd: Sam Houston
+    division: FBS
+  san-diego-state:
+    cfbd: San Diego State
+    division: FBS
+  san-jos-state:
+    cfbd: "San Jos\xE9 State"
+    division: FBS
+  smu:
+    cfbd: SMU
+    division: FBS
+  south-alabama:
+    cfbd: South Alabama
+    division: FBS
+  south-carolina:
+    cfbd: South Carolina
+    division: FBS
+  south-florida:
+    cfbd: South Florida
+    division: FBS
+  southern-miss:
+    cfbd: Southern Miss
+    division: FBS
+  stanford:
+    cfbd: Stanford
+    division: FBS
+  syracuse:
+    cfbd: Syracuse
+    division: FBS
+  tcu:
+    cfbd: TCU
+    division: FBS
+  temple:
+    cfbd: Temple
+    division: FBS
+  tennessee:
+    cfbd: Tennessee
+    division: FBS
+  texas:
+    cfbd: Texas
+    division: FBS
+  texas-am:
+    cfbd: Texas A&M
+    division: FBS
+  texas-state:
+    cfbd: Texas State
+    division: FBS
+  texas-tech:
+    cfbd: Texas Tech
+    division: FBS
+  toledo:
+    cfbd: Toledo
+    division: FBS
+  troy:
+    cfbd: Troy
+    division: FBS
+  tulane:
+    cfbd: Tulane
+    division: FBS
+  tulsa:
+    cfbd: Tulsa
+    division: FBS
+  uab:
+    cfbd: UAB
+    division: FBS
+  ucf:
+    cfbd: UCF
+    division: FBS
+  ucla:
+    cfbd: UCLA
+    division: FBS
+  uconn:
+    cfbd: UConn
+    division: FBS
+  ul-monroe:
+    cfbd: UL Monroe
+    division: FBS
+  unlv:
+    cfbd: UNLV
+    division: FBS
+  usc:
+    cfbd: USC
+    division: FBS
+  utah:
+    cfbd: Utah
+    division: FBS
+  utah-state:
+    cfbd: Utah State
+    division: FBS
+  utep:
+    cfbd: UTEP
+    division: FBS
+  utsa:
+    cfbd: UTSA
+    division: FBS
+  vanderbilt:
+    cfbd: Vanderbilt
+    division: FBS
+  virginia:
+    cfbd: Virginia
+    division: FBS
+  virginia-tech:
+    cfbd: Virginia Tech
+    division: FBS
+  wake-forest:
+    cfbd: Wake Forest
+    division: FBS
+  washington:
+    cfbd: Washington
+    division: FBS
+  washington-state:
+    cfbd: Washington State
+    division: FBS
+  west-virginia:
+    cfbd: West Virginia
+    division: FBS
+  western-kentucky:
+    cfbd: Western Kentucky
+    division: FBS
+  western-michigan:
+    cfbd: Western Michigan
+    division: FBS
+  wisconsin:
+    cfbd: Wisconsin
+    division: FBS
+  wyoming:
+    cfbd: Wyoming
+    division: FBS
