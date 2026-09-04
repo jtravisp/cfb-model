@@ -1,4 +1,4 @@
-> **Note:** Read-only reference copy from `travispollard.com` at commit `ab38b7b1abcf23707ab282ab7474569a7dd7c2e0`. The original file in `travispollard.com/cfb/docs/` governs.
+> **Note:** Read-only reference copy from `travispollard.com` at commit `4fd363788e4dac12229f56548408644cc5028e9b`. The original file in `travispollard.com/cfb/docs/` governs.
 
 # Phase 1 — v1: implementation spec
 
@@ -1040,6 +1040,48 @@ Thursday run. Meeting "first kickoff of the week" literally in those weeks needs
 publish. An SLO the schedule is known to miss in four weeks of the season is worth stating as such rather
 than quietly redefining the deadline to whatever the cron already achieves — which is exactly how
 "first kickoff Saturday" came to be written.
+
+### 8.2 CFBD's calendar returns partition boundaries, not kickoffs
+
+`firstGameStart` and `lastGameStart` promise a kickoff and do not deliver one. Every value in CFBD's
+2026 calendar is the partition edge — exactly `07:00:00.000Z` to open and `06:59:00.000Z` to close —
+and the partitions are contiguous, each opening on the Monday.
+
+**`coming_week` keyed on `first_game_start` and was therefore wrong on every Thursday of the season.**
+A CFBD week opens on the Monday, so by the Thursday run the current week had always "begun" under that
+reading and was skipped; the function returned the week *after* the coming Saturday's. Measured on the
+live calendar, 09-03 resolved to a slate nine days out, and so did every Thursday after it.
+
+**The damage was not a wrong week on a page.** `publish` already corrects for that — `_next_fixture`
+and the slate's own week both hold the board on the week being played. The damage was that a forecast
+written nine days early has nothing to be compared against. Sagarin publishes for the imminent weekend
+and books price it; week 2 of 2026 was forecast on 09-03 with **0 of 120 games carrying a Sagarin
+margin and 7 carrying a line**, against 25 and 116 for week 1. That silently starves `sagarin_mae`,
+the `models.json` shared denominator (SPEC-phase2 §6.3, which needs both benchmarks) and §3.6's
+correlation series — none of which goes red when it empties. The seed disclosure could never have
+retired.
+
+**§8.1 settles which reading was intended.** It reasons about November MACtion playing "inside the
+same CFBD week and roughly 36 hours *before* the Thursday run", and expects that week to be forecast
+anyway with the deadline missed and stated. A week whose Tuesday games precede the run is a week
+already under way, so **"the week about to be played" means the imminent slate, not the next partition
+to open.**
+
+So `coming_week` selects the first non-postseason week that has not yet **closed**. Nothing is lost by
+dropping the old guard, because it was the second one: `predict_week` filters games that have already
+kicked off and raises when none remain, and that is the check that keeps a forecast honest.
+
+**One edge this admits, stated rather than discovered.** Between a week's last game and its partition
+close — for 2026 week 1, the Monday evening through Tuesday 06:59Z — `coming_week` still names that
+week while it has nothing left to forecast. A run there raises `ReplayError` naming the case. The
+scheduled crons never land in that window; a manual run can, and it fails loudly rather than
+forecasting the wrong week.
+
+**Why no test caught it.** `tests/fixtures/calendar_2026_synthetic.json` gives each week a realistic
+first and last kickoff, with four clear days between weeks, so no week ever spans the Thursday run.
+Under that fixture the old reading is correct. The fixture encoded an assumption the real source does
+not hold — the same shape of failure as a Sagarin fixture that only ever covered the preseason page.
+`TestComingWeek` is pointed at the committed real calendar for that reason.
 
 ---
 
