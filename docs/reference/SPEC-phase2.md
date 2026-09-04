@@ -1,4 +1,4 @@
-> **Note:** Read-only reference copy from `travispollard.com` at commit `4fd363788e4dac12229f56548408644cc5028e9b`. The original file in `travispollard.com/cfb/docs/` governs.
+> **Note:** Read-only reference copy from `travispollard.com` at commit `af58ec7e7ad61b3a3fbc7851af67ccb32352c47b`. The original file in `travispollard.com/cfb/docs/` governs.
 
 # Phase 2 — depth: backfill, a fitted model, and the bake-off
 
