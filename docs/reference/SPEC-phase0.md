@@ -1,4 +1,4 @@
-> **Note:** Read-only reference copy from `travispollard.com` at commit `af58ec7e7ad61b3a3fbc7851af67ccb32352c47b`. The original file in `travispollard.com/cfb/docs/` governs.
+> **Note:** Read-only reference copy from `travispollard.com` at commit `680372146262adc0ff2530d89367315488098202`. The original file in `travispollard.com/cfb/docs/` governs.
 
 # Phase 0 — the collector: implementation spec
 
